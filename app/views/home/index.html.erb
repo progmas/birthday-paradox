@@ -1,0 +1,70 @@
+<h1>BIRTHDAY PARADOX</h1>
+<p></p>
+
+
+<%
+  testing_people_quantity = [2, 3, 5, 10, 20]
+  trial_count = 15
+%>
+
+
+<table class="" border="1">
+  <tr>
+    <th></th>
+    <% testing_people_quantity.each do |people_count| %>
+      <th><%= people_count %> kişi</th>
+    <% end %>
+  </tr>
+
+  <% trial_count.times do |trial| %>
+    <tr>
+      <th><%= trial + 1 %>. deneme</th>
+      <% testing_people_quantity.each do |people_count| %>
+        <%
+          generated_dates = generate_date(people_count)
+        %>
+
+        <td>
+          <%= generated_dates %>
+          <%= calc_conflict(generated_dates) %> çakışma
+        </td>
+      <% end %>
+    </tr>
+  <% end %>
+
+  <tr>
+    <th>Ortalama</th>
+    <td></td>
+  </tr>
+</table>
+
+
+
+<table class="" border="1">
+  <tr>
+    <th></th>
+    <% (1..31).each do |day| %>
+      <th><%= day %></th>
+    <% end %>
+  </tr>
+  <% @months.each do |month| %>
+    <tr>
+      <th><%= month %></th>
+    </tr>
+  <% end %>
+</table>
+
+
+<table class="" border="1">
+  <tr>
+    <th></th>
+    <% @days.each do |day| %>
+      <th><%= day %></th>
+    <% end %>
+  </tr>
+  <% @months.each do |month| %>
+    <tr>
+      <th><%= month %></th>
+    </tr>
+  <% end %>
+</table>
