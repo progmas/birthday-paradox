@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0909707f-9227-4636-931b-c40cd798dc15" name="Default Changelist" comment="" />
+    <list default="true" id="0909707f-9227-4636-931b-c40cd798dc15" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/home/cicek.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +22,7 @@
   <component name="ProjectId" id="1SvgAwBvlZlTnA9EkaGW4bWnjQK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -142,6 +151,15 @@
       <option name="presentableId" value="Default" />
       <updated>1572449343075</updated>
       <workItem from="1572449344772" duration="3431000" />
+      <workItem from="1572496909794" duration="915000" />
+      <workItem from="1572509665591" duration="586000" />
+      <workItem from="1572524391121" duration="678000" />
+      <workItem from="1572531677800" duration="571000" />
+      <workItem from="1572546688042" duration="590000" />
+      <workItem from="1572640361181" duration="30000" />
+      <workItem from="1572640441671" duration="588000" />
+      <workItem from="1572673743178" duration="49000" />
+      <workItem from="1572954191024" duration="7359000" />
     </task>
     <servers />
   </component>
@@ -153,7 +171,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

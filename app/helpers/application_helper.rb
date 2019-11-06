@@ -22,4 +22,13 @@ module ApplicationHelper
     end
     return count
   end
+
+  def calc_distance(data, x1, y1, k)
+    neighboor = []
+    data.each do |x2,y2|
+      _result = Math.sqrt((x1-x2) ** 2 + (y1-y2) ** 2)
+      neighboor << _result - k
+    end
+    puts neighboor
+  end
 end
