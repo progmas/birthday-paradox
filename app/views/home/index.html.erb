@@ -3,7 +3,6 @@
   testing_people_quantity = [2, 3, 5, 10, 20]
   trial_count = 15
   sum_of_conflict = Array.new(7, 0)
-  conflict_of_days = Array.new(testing_people_quantity.count, 8) { Array.new(8, 0) }
 %>
 
 <table class="" border="1">
@@ -18,15 +17,7 @@
     <tr>
       <th><%= trial + 1 %>. deneme</th>
       <% testing_people_quantity.each_with_index do |people_count, index| %>
-        <%
-          generated_dates = generate_date(people_count)
-          generated_dates.each_with_index.select { |x, index| x >= 2 }.each do |x|
-            #x.each do |y|
-              #conflict_of_days[index][y] += x[0] - 1
-            #end
-          end
-
-        %>
+        <% generated_dates = generate_date(people_count) %>
         <td>
           <%= generated_dates %>
           <%
@@ -51,37 +42,3 @@
     <% end %>
   </tr>
 </table>
-
-<% if false %>
-
-  <table class="" border="1">
-    <tr>
-      <th></th>
-      <% (1..31).each do |day| %>
-        <th><%= day %></th>
-      <% end %>
-    </tr>
-    <% @months.each do |month| %>
-      <tr>
-        <th><%= month %></th>
-      </tr>
-    <% end %>
-  </table>
-
-
-  <table class="" border="1">
-    <tr>
-      <th></th>
-      <% @days.each do |day| %>
-        <th><%= day %></th>
-      <% end %>
-    </tr>
-    <% @months.each do |month| %>
-      <tr>
-        <th><%= month %></th>
-      </tr>
-    <% end %>
-  </table>
-<% end %>
-
-<%= conflict_of_days.inspect %>
